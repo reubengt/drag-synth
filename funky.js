@@ -14,7 +14,7 @@ const getLabelColor = x => {
 const getBackgroundColor = x => {
   if (dragging) {
     let fraction = x / window.innerWidth;
-    return "hsl(" + fraction * 360 + ", 100%, 50%)";
+    return "hsl(" + fraction * 360 + ", 60%, 35%)";
   } else return "#222";
 };
 
