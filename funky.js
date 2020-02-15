@@ -15,5 +15,12 @@ const up = event => {
   synth.triggerRelease();
 };
 
+const move = event => {
+  var x = event.pageX;
+  synth.setNote(x);
+  label.innerHTML = Math.round(x) + "Hz";
+};
+
 pad.addEventListener("pointerdown", down);
 pad.addEventListener("pointerup", up);
+pad.addEventListener("pointermove", move);
